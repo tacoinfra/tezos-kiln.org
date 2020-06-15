@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#project-title {
+    font-size: 48pt;
+    vertical-align: bottom;
+}
+
+
+#links {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.emulated-flex-gap > * {
+  margin: 12px 0 0 12px;
+}
+
+.emulated-flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -12px 0 0 -12px;
+  width: calc(100% + 12px);
+}
