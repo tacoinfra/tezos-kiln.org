@@ -46,6 +46,32 @@
         > to join Tezos Baking Slack.
       </div>
       <div><h3> 
+      Important for Version 0.8.2</h3></div>
+      <div style="text-align: justify; width: 75%;">
+        <p>Archival node may not be properly syncing on Delphi and cause issues for the Kiln node to get up to date. To address this issue follow the steps below.<br/> 
+        </p><p><strong>On Ubuntu:</strong></p>
+<div class="code">sudo su -<br/>
+cd /var/lib/kiln/exe-dir/<br/>
+ls
+</div>
+<p>if there is no config directory yet, make it:</p>
+<div class="code">mkdir -p config</div>
+<p>if there is - just continue with the following:</p>
+<div class="code">echo false > config/enable-obsidian-node<br/>
+systemctl stop kiln<br/>
+systemctl start kiln</div>
+<p><strong>On MacOS Catalina</strong></p>
+<div class="code">cd ~/Library/Kiln<br/>
+ls</div>
+<p>if there is no config directory yet, make it:</p>
+<div class="code">mkdir -p config</div>
+<p>if there is - just continue with the following:</p>
+<div class="code">echo false > config/enable-obsidian-node<br/>
+launchctl stop tezos.kiln<br/>
+launchctl start tezos.kiln<br/>
+</div>
+    </div>
+    <div><h3> 
       Tutorials</h3></div>
       <div style="text-align-last: center;">
         <a href="https://medium.com/tezos-kiln/how-to-install-kiln-on-macos-catalina-ce0821f97dcf">How to install Kiln on MacOS Catalina</a><br/>

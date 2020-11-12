@@ -43,3 +43,10 @@ body {
   width: calc(100% + 12px);
 }
 
+.code{
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+p{
+  font-size: 0.8em;
+}
