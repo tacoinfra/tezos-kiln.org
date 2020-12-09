@@ -1,22 +1,16 @@
 body {
   font-family: sans-serif;
   margin: auto;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
 }
 
 #content {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin: 1em;
 }
 
 #project-title {
@@ -43,10 +37,6 @@ body {
   width: calc(100% + 12px);
 }
 
-.code{
-  font-family: 'Courier New', Courier, monospace;
-  
-}
-p{
+p {
   font-size: 0.8em;
 }
