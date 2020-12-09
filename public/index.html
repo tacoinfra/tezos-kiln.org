@@ -21,19 +21,15 @@
       </div>
       <div id="links" class="emulated-flex-gap">
         <a
-          href="https://kiln-releases.s3.amazonaws.com/0.8.2-rc18/cr2ysszcwxr3vcd3f5p44d4dncy58ldf-kiln-0.8.2-debian-pkg/kiln_0.8.2_amd64.deb"
+          href="https://kiln-releases.s3.amazonaws.com/0.8.3-rc5/99zdih8ql91xjpfdxipvb510v6iia24j-kiln-0.8.3-debian-pkg/kiln_0.8.3_amd64.deb"
           >Ubuntu</a
         >
         <a
-          href="https://kiln-releases.s3.amazonaws.com/0.8.2-rc18/macos/kiln-0.8.2-1.pkg"
+          href="https://kiln-releases.s3.amazonaws.com/0.8.3-rc5/macos/kiln-0.8.3-1.pkg"
         >
           MacOS
         </a>
-        <a
-          href="https://kiln-releases.s3.amazonaws.com/0.8.2-rc18/br6cbpl4nq07q9q0r73b5y2ynp5dhmkv-kiln-vm/kiln-vm_0.8.2.ova"
-        >
-          Virtualbox
-        </a>
+        
         <a href="https://gitlab.com/tezos-kiln/kiln">
           Source
         </a>
@@ -45,38 +41,20 @@
           >joinslack@tezos-kiln.org</a
         > to join Tezos Baking Slack.
       </div>
-      <div><h3> 
-      Important for Version 0.8.2</h3></div>
-      <div style="text-align: justify; width: 75%;">
-        <p>Archival node may not be properly syncing on Delphi and cause issues for the Kiln node to get up to date. To address this issue follow the steps below.<br/> 
-        </p><p><strong>On Ubuntu:</strong></p>
-<div class="code">sudo su -<br/>
-cd /var/lib/kiln/exe-dir/<br/>
-ls
-</div>
-<p>if there is no config directory yet, make it:</p>
-<div class="code">mkdir -p config</div>
-<p>if there is - just continue with the following:</p>
-<div class="code">echo false > config/enable-obsidian-node<br/>
-systemctl stop kiln<br/>
-systemctl start kiln</div>
-<p><strong>On MacOS Catalina</strong></p>
-<div class="code">cd ~/Library/Kiln<br/>
-ls</div>
-<p>if there is no config directory yet, make it:</p>
-<div class="code">mkdir -p config</div>
-<p>if there is - just continue with the following:</p>
-<div class="code">echo false > config/enable-obsidian-node<br/>
-launchctl stop tezos.kiln<br/>
-launchctl start tezos.kiln<br/>
-</div>
-    </div>
+      
     <div><h3> 
       Tutorials</h3></div>
       <div style="text-align-last: center;">
         <a href="https://medium.com/tezos-kiln/how-to-install-kiln-on-macos-catalina-ce0821f97dcf">How to install Kiln on MacOS Catalina</a><br/>
         <a href="https://medium.com/kiln/how-to-install-kiln-and-bake-on-ubuntu-a13d17df63c">How to Install Kiln and Bake on Ubuntu</a>
       </div>
+      <div><h3> 
+        Snapshots</h3></div>
+        <div style="text-align-last: center;">
+          <a href="https://snapshots-tezos.giganode.io/">Tezos Giganode Snapshots</a><br/>
+          <a href="https://snapshots.tulip.tools/#/">Tulip Tools Snapshots</a><br/>
+          <a href="https://xtz-shots.io/">XTZ Shots</a>
+        </div>
     </div>
   </body>
 </html>
