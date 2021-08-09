@@ -49,14 +49,28 @@
       <div style="text-align-last: center;">
       <p>Everyone running Kiln 0.10.1 should update their Tezos version to 9.7 to improve performance. Here's a script to download Tezos 9.7 binaries and configure Kiln 0.10.1 to use them:</p>
 <h4>On Ubuntu:</h4>
-<div style="border: 1px solid #999999; background-color: #cecece;font-family: 'Courier New'; display:flex; align-self: center; align-items:start;justify-content:start;flex-direction:column;"><p>wget https://gitlab.com/tezos-kiln/kiln/-/raw/develop/scripts/kiln-configure-tezos-9.7.sh </p>
-<p>chmod +x ./kiln-configure-tezos-9.7.sh</p>
-<p>sudo ./kiln-configure-tezos-9.7.sh</p>
+<div style="border: 1px solid #999999; background-color: #cecece;font-family: 'Courier New'; display:flex; align-self: center; align-items:start;justify-content:start;flex-direction:column;"><div>wget https://gitlab.com/tezos-kiln/kiln/-/raw/develop/scripts/kiln-configure-tezos.sh</div>
+<div>chmod +x ./kiln-configure-tezos.sh</div>
+</div>
+<p>To update to Tezos 9.7:</p>
+<div style="border: 1px solid #999999; background-color: #cecece;font-family: 'Courier New'; display:flex; align-self: center; align-items:start;justify-content:start;flex-direction:column;">
+<div>sudo ./kiln-configure-tezos.sh 9.7</div>
+</div>
+<p>Or to update to Tezos 9.6 (only if 9.7 is not suitable for you for any reason):</p>
+<div style="border: 1px solid #999999; background-color: #cecece;font-family: 'Courier New'; display:flex; align-self: center; align-items:start;justify-content:start;flex-direction:column;">
+<div>sudo ./kiln-configure-tezos.sh 9.6</div>
 </div>
 <h4>On MacOS:</h4>
-<div style="border: 1px solid #999999; background-color: #cecece;align-content:start; font-family: 'Courier New'; display:flex; align-self: center; align-items:start;justify-content:start;flex-direction:column;"><p>curl https://gitlab.com/tezos-kiln/kiln/-/raw/develop/scripts/kiln-configure-tezos-macos.sh -o kiln-configure-tezos-macos.sh</p>
-<p>chmod +x ./kiln-configure-tezos-macos.sh</p>
-<p>./kiln-configure-tezos-macos.sh 9.7-1</p>
+<div style="border: 1px solid #999999; background-color: #cecece;font-family: 'Courier New'; display:flex; align-self: center; align-items:start;justify-content:start;flex-direction:column;"><div>curl https://gitlab.com/tezos-kiln/kiln/-/raw/develop/scripts/kiln-configure-tezos.sh</div>
+<div>chmod +x ./kiln-configure-tezos.sh</div>
+</div>
+<p>To update to Tezos 9.7:</p>
+<div style="border: 1px solid #999999; background-color: #cecece;font-family: 'Courier New'; display:flex; align-self: center; align-items:start;justify-content:start;flex-direction:column;">
+<div>./kiln-configure-tezos.sh 9.7</div>
+</div>
+<p>Or to update to Tezos 9.6 (only if 9.7 is not suitable for you for any reason):</p>
+<div style="border: 1px solid #999999; background-color: #cecece;font-family: 'Courier New'; display:flex; align-self: center; align-items:start;justify-content:start;flex-direction:column;">
+<div>./kiln-configure-tezos.sh 9.6</div>
 </div>
 
 
