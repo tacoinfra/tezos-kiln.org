@@ -11,6 +11,7 @@ body {
     align-items: center;
     height: 100%;
     margin: 1em;
+    line-height: 1.5em;
 }
 
 #project-title {
@@ -39,4 +40,11 @@ body {
 
 p {
   font-size: 0.8em;
+}
+
+pre {
+    padding: 10px;
+    background: #eee;
+    border: thin solid darkgray;
+    white-space: pre-wrap;
 }
